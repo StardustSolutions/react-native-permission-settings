@@ -52,7 +52,8 @@ import NotificationSettings from 'react-native-permission-settings';
 
 ...
 
-NotificationSettings.areNotificationsEnabled((isEnabled: boolean) => {
+NotificationSettings.areNotificationsEnabled()
+.then(isEnabled => {
   console.log(`Notifications are enabled: ${isEnabled}`);
 });
 ```
